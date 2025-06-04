@@ -1,2 +1,2 @@
-# Assignment-3
-Github repo for SEG 3103 Assignment 3
+# Assignment-2
+Github repo for SEG 3103 Assignment 2
