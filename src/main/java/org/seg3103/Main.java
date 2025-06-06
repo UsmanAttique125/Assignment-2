@@ -14,5 +14,14 @@ public class Main {
                 .build();
 
         new Runner(opt).run();
+
+        Options quickSortOptions = new OptionsBuilder()
+                .include(".*" + QuickSort.class.getSimpleName() + ".*")
+                .warmupIterations(2)
+                .measurementIterations(5)
+                .forks(1)
+                .build();
+
+        new Runner(quickSortOptions).run();
     }
 }
