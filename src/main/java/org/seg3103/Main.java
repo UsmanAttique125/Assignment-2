@@ -23,5 +23,14 @@ public class Main {
                 .build();
 
         new Runner(quickSortOptions).run();
+
+        Options bubbleSortOptions = new OptionsBuilder()
+                .include(".*" + BubbleSort.class.getSimpleName() + ".*")
+                .warmupIterations(2)
+                .measurementIterations(5)
+                .forks(1)
+                .build();
+
+        new Runner(bubbleSortOptions).run();
     }
 }
