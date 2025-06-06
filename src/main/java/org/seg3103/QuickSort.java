@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadLocalRandom;
 @Measurement(iterations = 5)
 public class QuickSort {
 
-    @Param({"10", "1000", "100000"}) // Example list sizes
+    @Param({"10", "1000", "10000"}) // Example list sizes
     public int listSize;
 
     private ArrayList<Integer> numbers;
