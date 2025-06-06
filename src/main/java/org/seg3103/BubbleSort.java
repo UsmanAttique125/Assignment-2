@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.Throughput)
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
+@OutputTimeUnit(TimeUnit.SECONDS)
 @Warmup(iterations = 3)
 @Measurement(iterations = 5)
 public class BubbleSort {
